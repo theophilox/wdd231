@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nathan site</title>
+    <meta name="author" content="Nathan Javier">
+    <meta name="description" content="Personal website of nathan">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/index.js" defer></script>
+    
 </head>
 <body>
-    <h1>Hello World.</h1>
+    <header>
+        <img src="images/n-logo.svg" alt="site logo" width="1em" height="1em">
+        <span>Nathan Javier</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Learning activities</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <h1>Home</h1></main>
+    
+    <footer>
+        <div class="social">
+            <a href="https://github.com/theophilox" target="_blank"><img src="images/github.svg" alt="github icon" width="16" height="16"></a>
+            <a href="https://www.facebook.com/Slex.xD/" target="_blank"><img src="images/facebook.svg" alt="facebook icon" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/nathan-javier27" target="_blank"><img src="images/linkedin.svg" alt="linkedIN icon" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/instagram.svg" alt="instagram icon" width="16" height="16"></a>
+        </div>
+        <p>© <span id="currentYear"></span> | Nathan Javier | Philippines</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
