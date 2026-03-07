@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/index.js" defer></script>
-    
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">  
 </head>
 <body>
     <header>
@@ -21,14 +25,38 @@
     <nav id="nav-bar" class="navigation">
         <ul>
             <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Learning activities</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
         </ul>
 
     </nav>
     <main>
-        <h1>Home</h1></main>
-    
+        <h1>Home</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus amet cumque adipisci! Odit corrupti consequatur nisi incidunt, quam quas cum quis! Doloremque iste ullam sapiente debitis repellendus in quisquam.</p>
+        </section>
+
+        <section class="photo-container">
+            <h2>Student Photo</h2>
+            <img src="images/me.jpg" alt="My picture">
+        </section>
+
+        <section class="certificate">
+            <h2>Web Certificate </h2>
+
+            <div class="button-cont">
+                <button id="show-all">All Courses</button>
+                <button id="show-wdd">WDD Courses</button>
+                <button id="show-cse">CSE Courses</button>
+            </div>
+
+            <p>The total credits points of listed course below is: <span id="total-credits"></span></p>
+
+            <div id="cert-card" class="courses"></div>
+
+        </section>
+    </main>
     <footer>
         <div class="social">
             <a href="https://github.com/theophilox" target="_blank"><img src="images/github.svg" alt="github icon" width="16" height="16"></a>
