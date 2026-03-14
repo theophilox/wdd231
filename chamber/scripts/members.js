@@ -22,7 +22,7 @@ const displayMembers = (members) => {
         let logo = document.createElement('img');
         let address = document.createElement('p');
         let contact = document.createElement('p');
-        let url = document.createElement('p');
+        let url = document.createElement('a');
 
         name.textContent = `${member.name}`;
 
@@ -32,9 +32,10 @@ const displayMembers = (members) => {
         logo.setAttribute("width", "340");
         logo.setAttribute("height", "400");
 
-        address.textContent = `Address: ${member.address}`;
-        contact.textContent = `Contact: ${member.contact}`;
-        url.textContent = `Contact: ${member.url}`;
+        address.textContent = `${member.address}`;
+        contact.textContent = `${member.phone}`;
+        url.setAttribute("href",member.url);
+        url.textContent = `${member.url}`
 
         card.appendChild(name);
         card.appendChild(logo);

@@ -1,0 +1,222 @@
+:root {
+    --primary: #4f3636;
+    --secondary: #f5f3c2;
+
+}
+
+* {
+    font-family: "Roboto Slab", serif;;
+    box-sizing: border-box;
+}
+
+/*- Header -*/
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px 44px;
+    align-items: center;
+    column-gap: 5px;
+    background-color: var(--secondary);
+    border-bottom: solid 4px var(--primary);
+    
+}
+
+header img {
+    display: block;
+    width: 35px;
+    height: auto;
+    margin: auto;
+}
+
+header span {
+    color: var(--primary);
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+
+
+/*- Hamburger -*/
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+    color: #364328;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+    color:#364328;
+}
+
+/*- Navigation -*/
+.navigation {
+    display: none;
+    background-color: var(--light-color);
+    grid-column: 1/-1;
+    margin-top: 10px;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation img {
+    width: 100%;
+    height: auto;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation a.active {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.navigation a:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+/*- Main -*/
+main {
+    background-color: #fff;
+}
+
+
+
+h1 {
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.menu button {
+    width: 100px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.menu img {
+    height: 24px;
+    width: 24px;
+}
+
+.menu button:hover {
+    background-color: var(--primary);
+    color: var(--primary);
+    cursor: pointer;
+}
+
+
+.list img {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    padding: 20px 0;
+}
+
+/*- Cards -*/
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+    
+}
+
+#cards section {
+    display: grid;
+    padding: 20px;
+    text-align: center;
+    border: solid 1px var(--primary);  
+}
+
+section img {
+    height: 110px;
+    width: auto;
+    margin: 10px auto;
+}
+
+section p, a {
+    margin: 5px;
+    
+}
+
+section a {
+    color: blue;
+}
+
+section a:hover {
+    color: var(--dark-green);
+    font-weight: 600;
+}
+
+
+
+
+/*- Footer -*/
+footer {
+    background-color: var(--secondary);
+    display: grid;
+    grid-gap: 1rem;
+    place-items: center;
+    text-align: center;
+    padding: 20px 5px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer img {
+    padding: 5px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.social a {
+    display: flex;
+}
+
+.social img {
+    width: 44px;
+    height: 44px;
+
+}
