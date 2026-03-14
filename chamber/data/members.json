@@ -4,14 +4,16 @@
         "address": "Roof Deck Overland Building, Governor's Dr, Naic, Calabarzon, Philippines",
         "phone": "+63-915-631-4944",
         "url": "https://www.facebook.com/pangrillrestocafe",
-        "img": "images/pangrill.webp"
+        "img": "images/pangrill.webp",
+        "membershipLevel": 1
     },
     {
         "name": "Lolo Claro's Restaurant",
         "address": "8Q6C+8P4, Governor's Dr, Naic, Calabarzon, Philippines",
         "phone": "+63-919-506-1837",
         "url": "https://www.facebook.com/loloclaros",
-        "img": "images/lolo-claros.jpg"
+        "img": "images/lolo-claros.jpg",
+        "membershipLevel": 1
 
     },
     {
@@ -19,7 +21,8 @@
         "address": "Unit A1, Brgy, 136 Antero Soriano Hwy, Naic, Calabarzon, Philippines",
         "phone": "+63-468-89-9181",
         "url": "https://www.facebook.com/thirdbloomcafe",
-        "img": "images/third-bloom.jpg"
+        "img": "images/third-bloom.jpg",
+        "membershipLevel": 1
 
     },
     {
@@ -27,7 +30,8 @@
         "address": "8QJJ+453, R-1, Naic, Calabarzon, Philippines",
         "phone": "+63-935-311-2053",
         "url": "https://www.facebook.com/TimalandiaRestoph",
-        "img": "images/timalandia.jpg"
+        "img": "images/timalandia.jpg",
+        "membershipLevel": 1
     
     },
     {
@@ -35,21 +39,24 @@
         "address": "Governor's Dr, Naic, Calabarzon, Philippines",
         "phone": "+63999-777-999",
         "url": "https://www.facebook.com/WingsparkNaic/",
-        "img": "images/wingspark.jpg"
+        "img": "images/wingspark.jpg",
+        "membershipLevel": 1
     },
     {
         "name": "Jollibee",
         "address": "Subd., Brgy, 8QCF+G29 Virginia Lopez, Governor's Dr, Naic, Calabarzon, Philippines",
         "phone": "+63464-133-810",
         "url": "https://www.jollibee.com.ph/",
-        "img": "images/jollibee.jpg"
+        "img": "images/jollibee.jpg",
+        "membershipLevel": 1
     },
     {
         "name": "YOOMIES",
         "address": "8QC8+25G, P. Poblete St, Naic, Calabarzon, Philippines",
         "phone": "+63-927-005-4463",
         "url": "https://www.facebook.com/profile.php?id=100085510489020",
-        "img": "images/yoomies.jpg"
+        "img": "images/yoomies.jpg",
+        "membershipLevel": 1
     }
 
     ]
