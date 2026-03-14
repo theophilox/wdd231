@@ -61,7 +61,7 @@ header span {
 /*- Navigation -*/
 .navigation {
     display: none;
-    background-color: var(--light-color);
+    background-color: var(--secondary);
     grid-column: 1/-1;
     margin-top: 10px;
     color: var(--primary);
@@ -101,11 +101,6 @@ header span {
 }
 
 /*- Main -*/
-main {
-    background-color: #fff;
-}
-
-
 
 h1 {
     padding: 20px;
