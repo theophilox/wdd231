@@ -27,6 +27,10 @@ header img {
     margin: auto;
 }
 
+header .themes {
+    height: 26px;
+    width: 26px;
+}
 header span {
     color: var(--primary);
     font-weight: 900;
@@ -60,6 +64,7 @@ header span {
     background-color: var(--light-color);
     grid-column: 1/-1;
     margin-top: 10px;
+    color: var(--primary);
 }
 
 .navigation.show {
@@ -82,7 +87,7 @@ header span {
     display: block;
     padding: .8rem 10px;
     text-decoration: none;
-    color: #000;
+    color: var(--primary);
 }
 
 .navigation a.active {
@@ -176,7 +181,7 @@ section p, a {
 }
 
 section a {
-    color: blue;
+    color: rgb(0, 0, 255);
 }
 
 section a:hover {
