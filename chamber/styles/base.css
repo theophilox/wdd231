@@ -49,13 +49,13 @@ header span {
 .hamburger::before {
     content: "\2630";
     font-size: 2rem;
-    color: #364328;
+    color: var(--primary);
 }
 
 .hamburger.show::before {
     content: "\00D7";
     font-size: 2rem;
-    color:#364328;
+    color: var(--primary);
 }
 
 /*- Navigation -*/
