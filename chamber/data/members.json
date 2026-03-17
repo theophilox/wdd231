@@ -5,7 +5,7 @@
         "phone": "+63-915-631-4944",
         "url": "https://www.facebook.com/pangrillrestocafe",
         "img": "images/pangrill.webp",
-        "membershipLevel": 1
+        "membershipLevel": 3
     },
     {
         "name": "Lolo Claro's Restaurant",
@@ -13,7 +13,7 @@
         "phone": "+63-919-506-1837",
         "url": "https://www.facebook.com/loloclaros",
         "img": "images/lolo-claros.jpg",
-        "membershipLevel": 1
+        "membershipLevel": 2
 
     },
     {
@@ -31,7 +31,7 @@
         "phone": "+63-935-311-2053",
         "url": "https://www.facebook.com/TimalandiaRestoph",
         "img": "images/timalandia.jpg",
-        "membershipLevel": 1
+        "membershipLevel": 2
     
     },
     {
@@ -48,7 +48,7 @@
         "phone": "+63464-133-810",
         "url": "https://www.jollibee.com.ph/",
         "img": "images/jollibee.jpg",
-        "membershipLevel": 1
+        "membershipLevel": 3
     },
     {
         "name": "YOOMIES",
