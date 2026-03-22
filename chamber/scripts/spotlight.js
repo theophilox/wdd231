@@ -1,12 +1,12 @@
 const url = 'data/members.json';
-const cards = document.querySelector('#cards');
-
+const spotlight = document.querySelector('#spotlight');
 
 const getMembersData = async() => {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        displayMembers(data.members);
+        spotlightMembers(data.members);
+
     } catch (error) {
         console.log("Error fetching data:", error);
     }
@@ -14,9 +14,20 @@ const getMembersData = async() => {
 
 getMembersData();
 
-const displayMembers = (members) => {
-    members.forEach((member) => {
 
+
+
+
+
+const spotlightMembers = (members) => {
+
+    const filterMember = members.filter(member => member.membershipLevel >= 2);
+
+    const random = filterMember.sort(() => 0.5 - Math.random());
+
+    const selected = random.slice(0, 3);
+
+    selected.forEach(member => {
         let card = document.createElement('section');
         let name = document.createElement('h2');
         let logo = document.createElement('img');
@@ -66,13 +77,10 @@ const displayMembers = (members) => {
         card.appendChild(address);
         card.appendChild(contact);
         card.appendChild(website);
-        cards.appendChild(card);
+        spotlight.appendChild(card);
 
+    })
+        
 
-    });
-
+    
 }
-
-
-
-
