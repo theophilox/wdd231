@@ -1,0 +1,19 @@
+{
+  "events": [
+    {
+        "where": "Third Bloom Cafe",
+        "what": "Coffee & Art Workshop",
+        "when": "2026/04/22 - 2:00 PM"
+       },
+    {
+        "where": "Pan Grill Resto Roof Deck",
+        "what": "Live Acoustic Night",
+        "when": "2026/04/25 - 7:00 PM"
+    },
+    {
+        "where": "Timalandia Park",
+        "what": "Family Fun Day",
+        "when": "2026-04-30 - 3:00 PM"
+    }
+  ]
+}

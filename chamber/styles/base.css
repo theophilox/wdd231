@@ -1,11 +1,11 @@
 :root {
-    --primary: #4f3636;
-    --secondary: #f5f3c2;
+    --primary: #1d3353;
+    --secondary: #eee4bd;
 
 }
 
 * {
-    font-family: "Roboto Slab", serif;
+    font-family: "Noto Sans Math", sans-serif;
     box-sizing: border-box;
 }
 
@@ -33,11 +33,14 @@ header .themes {
     height: 26px;
     width: 26px;
 }
+
 header span {
     color: var(--primary);
     font-weight: 900;
     font-size: xx-large;
+    font-size: medium;
 }
+
 
 
 
@@ -104,7 +107,13 @@ header span {
 
 /*- Main -*/
 
+main {
+     max-width: 930px;
+     margin: 0 auto;
+}
+
 h1 {
+    color: var(--primary);
     padding: 20px;
     margin: 0;
     text-align: center;
@@ -144,11 +153,69 @@ h1 {
     display: none;
 }
 
+.hero {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--primary);
+}
+
+.cta-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 2px solid var(--primary);
+    background-color: var(--secondary);
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+
+/*- UPDATES & WEATHER -*/
+
+.ups-ctnr {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+}
+
+.ups-ctnr section {
+    border: 1px solid var(--primary);
+}
+
+.ups-ctnr section h2{
+    background-color: var(--primary);
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.current-weather {
+    display: grid;
+    grid-template-columns: 120px auto;
+    text-align: center;
+}
+
+
+
+.current-weather h2{
+    grid-column: 1/3;
+}
+
 
 
 /*- Cards -*/
 
-#cards {
+#cards, #spotlight {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
@@ -158,17 +225,31 @@ h1 {
     
 }
 
-#cards section {
+#cards section, #spotlight section {
     display: block;
     padding: 15px;
     text-align: center;
-    border: solid 1px var(--primary);  
+    border: solid 5px var(--primary);  
+    border-radius: 50px;
+    background-color: var(--secondary);
+    margin: 0 auto;
+}
+
+.medal {
+    margin: 0 auto;
+    margin-top: 1rem;
+    height: 70px;
+    width: 70px;
+}
+
+section div {
+    margin: 0 auto;
+
 }
 
 section img {
     height: 110px;
     width: auto;
-    margin: 10px auto;
 }
 
 section p, section a {
@@ -187,6 +268,16 @@ section a:hover {
     font-weight: 600;
 }
 
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;           
+}
+
+.card-header img {
+  width: 50px;
+  height: auto;
+}
 
 
 
