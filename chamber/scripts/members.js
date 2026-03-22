@@ -51,6 +51,7 @@ const displayMembers = (members) => {
         logo.setAttribute("loading", "lazy");
         logo.setAttribute("width", "340");
         logo.setAttribute("height", "400");
+        logo.classList.add("members-icon");
 
         address.textContent = `${member.address}`;
         contact.textContent = `${member.phone}`;

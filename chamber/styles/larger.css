@@ -42,9 +42,10 @@
 
     #cards.list section{
         display: grid;
-        text-align: left;
-        border: solid 1px var(--secondary);
+        text-align: center;
+        border: solid 1px var(--primary);
         grid-template-columns: 230px auto 150px auto;
+        border-radius: 0;
     }
 
 

@@ -148,9 +148,8 @@ h1 {
 }
 
 
-.list img {
-    display: none;
-}
+
+
 
 .hero {
     display: block;
@@ -259,6 +258,12 @@ section p, section a {
     word-wrap: break-word;
     
 }
+
+.list .members-icon {
+    display: none;
+}
+
+
 
 
 section a {
