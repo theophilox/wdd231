@@ -108,7 +108,7 @@ header span {
 /*- Main -*/
 
 main {
-     max-width: 930px;
+     max-width: 1200px;
      margin: 0 auto;
 }
 
@@ -157,6 +157,7 @@ h1 {
     display: block;
     margin: 0 auto;
     position: relative;
+    max-width: 900px
 }
 
 .hero img{
@@ -186,6 +187,8 @@ h1 {
     grid-template-columns: 1fr;
     gap: 10px;
     text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .ups-ctnr section {
@@ -201,7 +204,7 @@ h1 {
 
 .current-weather {
     display: grid;
-    grid-template-columns: 120px auto;
+    grid-template-columns: 90px auto;
     text-align: center;
 }
 
@@ -218,7 +221,7 @@ h1 {
 #cards, #spotlight {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 340px));
     grid-gap: 1rem;
     padding: 1rem;
     justify-content: center;

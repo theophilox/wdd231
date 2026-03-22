@@ -9,9 +9,9 @@
     }
 
     header span {
-    color: var(--primary);
-    font-weight: 900;
-    font-size: xx-large;
+        color: var(--primary);
+        font-weight: 900;
+        font-size: xx-large;
     }
 
     .hamburger {
@@ -61,25 +61,38 @@
     }
 
     .cta-button {
-    bottom: 10px;
-    right: 20px;
-    padding: 0.5rem 1rem;
-    font-size: x-large;
+        bottom: 10px;
+        right: 20px;
+        padding: 0.5rem 1rem;
+        font-size: x-large;
     }
 
     .ups-ctnr {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 10px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .ups-ctnr section h2 {
+        font-size: 1rem;
+        padding: 10px;
     }
 
     .ups-ctnr section {
-    border: 1px solid var(--primary);
+        border: 1px solid var(--primary);
+        justify-content: center;
     }
 
     .current-weather p > span {
-    text-align: center;
-}
+        text-align: center;
+    }
+
+    .spot-mem {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+
+    }
 
 
 }
