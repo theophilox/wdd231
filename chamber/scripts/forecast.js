@@ -42,7 +42,7 @@ function displayForecast(data) {
       const card = document.createElement("div");
       card.classList.add("forecast-card");
 
-      card.innerHTML = `<p><strong>${dayName}</strong> - ${temp}&deg;C</p>
+      card.innerHTML = `<p><strong>${dayName}</strong>: ${temp}&deg;C</p>
       `;
 
       container.appendChild(card);
