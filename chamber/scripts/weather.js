@@ -30,13 +30,15 @@ async function apiFetch() {
 
 function displayResults(data) {
 
-
+    const weather = document.querySelector('#weather');
+    const icon = document.createElement("img");
+    const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
-    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    currentHumid.innerHTML = `${data.main.humidity}%`
-    weatherIcon.setAttribute('SRC', iconsrc);
+
+    weatherIcon.setAttribute('src', iconSrc);
     weatherIcon.setAttribute('alt', desc);
+    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+    currentHumid.innerHTML = `${data.main.humidity}%`
     captionDesc.textContent = `${desc}`;
 }
 
