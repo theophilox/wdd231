@@ -16,6 +16,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/course.js" defer></script>
+    <script src="scripts/dialog.js" defer></script>
     <link rel="icon" href="n-favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,15 +38,17 @@
     </nav>
     <main>
         <h1>Home</h1>
-        <section class="about-me">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus amet cumque adipisci! Odit corrupti consequatur nisi incidunt, quam quas cum quis! Doloremque iste ullam sapiente debitis repellendus in quisquam.</p>
-        </section>
+        <div class="my-info">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus amet cumque adipisci! Odit corrupti consequatur nisi incidunt, quam quas cum quis! Doloremque iste ullam sapiente debitis repellendus in quisquam.</p>
+            </section>
 
-        <section class="photo-container">
-            <h2>Student Photo</h2>
-            <img src="images/my-profile-picture.jpg" alt="My picture">
-        </section>
+            <section class="photo-container">
+                <h2>Student Photo</h2>
+                <img src="images/my-profile-picture.jpg" alt="My picture" loading="lazy">
+            </section>
+        </div>
 
         <section class="certificate">
             <h2>Web Certificate </h2>
@@ -59,8 +62,8 @@
             <p>The total credits points of listed course below is: <span id="total-credits"></span></p>
 
             <div id="cert-card" class="courses"></div>
-
         </section>
+        <dialog id="course-dialog"></dialog>
     </main>
     <footer>
         <div class="social">

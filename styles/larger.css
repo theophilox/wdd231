@@ -26,6 +26,23 @@
         border: none;
         width: auto;
     }
+
+    .courses {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    }
+
+    section {
+        border: 1px #c3c3c3 solid;
+        
+    }
+
+    .my-info {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 10px;
+        width: 100%;
+    }
     
     
 }
