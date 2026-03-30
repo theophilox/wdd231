@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naic Chamber Index Page</title>
     <meta name="author" content="Nathan Javier">
-    <meta name="description" content="Home page of Naic Chamber of Commerce, Index Project of wdd-231 that showcase using the Api">
-    <meta  property="og:title" content="Welcome to the homepage of Naic chamber of commerce.">
-    <meta  property="og:description" content="Index Home Page of Naic Chamber of Commerce for weekly project of wdd231.">
+    <meta name="description" content="Join page of Naic Chamber of Commerce, This page contain a form that will get the user information who wants to join in the chamber.">
+    <meta  property="og:title" content="Welcome to Naic chamber of commerce.">
+    <meta  property="og:description" content="Join to Naic Chamber of Commerce and help us each other to grow our business.">
     <meta  property="og:image" content="https://theophilox.github.io/wdd231/chamber/images/naic-hero.jpg">
     <meta  property="og:url" content="https://theophilox.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -15,10 +15,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/forecast.js" defer></script>
-    <script src="scripts/events.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +29,7 @@
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li ><a  href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="#">Discover</a></li>
@@ -41,44 +38,10 @@
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/naic-hero.jpg" alt="naic night shot">
-            <a href="#" class="cta-button">Join Now!</a>
-        </div>
 
-        <h1>Home Page</h1>
+        <h1>Thank you for joining.</h1>
+        <div id="output" class="output"></div>
 
-        <div class="ups-ctnr">
-
-            <section class="event" id="event-list">
-                <h2>Events</h2>
-
-                
-            
-            </section>
-            <section >
-                <h2>CURRENT WEATHER</h2>
-                <div class="current-weather" id="weather">
-                    <img id="weather-icon" src="#" alt="Weather Icon">
-                    <div>
-                        <p><span id="current-temp"></span></p>
-                        <p><span id="status"></span></p>
-                        <p>Humidity: <span id="humidity"></span>
-                        </p>
-                    </div>
-                </div>
-                
-            </section>
-            <section>
-                <h2>WEATHER FORECAST</h2>
-                <div  id="forecast"></div>
-
-            </section>
-        </div>
-        
-        <div id="spotlight" class="spot-mem">
-
-        </div>
     </main>
     <footer>
         <div>
