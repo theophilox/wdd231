@@ -44,76 +44,77 @@
         <div class="container">
 
     
-        <form method="get" action="thankyou.html">
+            <form method="get" action="thankyou.html">
 
-            <h2>Membership Application Form</h2>
+                <h2>Membership Application Form</h2>
 
-            <fieldset>  
+                <fieldset>  
 
-                <legend><strong>Personal information</strong></legend>
+                    <legend><strong>Personal information</strong></legend>
 
-                <label>
-                    First Name:
-                    <input type="text" name="fname" autocomplete="given-name" title="Enter first name" required>
-                </label>
+                    <label>
+                        First Name:
+                        <input type="text" name="fname" autocomplete="given-name" title="Enter first name" required>
+                    </label>
 
-                <label>
-                    Last Name:
-                    <input type="text" name="lname" autocomplete="family-name" title="Enter last name" required>
-                </label>
+                    <label>
+                        Last Name:
+                        <input type="text" name="lname" autocomplete="family-name" title="Enter last name" required>
+                    </label>
 
-                <label>
-                    Organizational Title:
-                    <input type="text" name="orgtitle" pattern="[A-Za-z\\-\\s]{7,}" title="At least 7 letters, spaces, or hyphens" autocomplete="organization-title">
-                </label>
+                    <label>
+                        Organizational Title:
+                        <input type="text" name="orgtitle" pattern="[A-Za-z\\-\\s]{7,}" title="At least 7 letters, spaces, or hyphens" autocomplete="organization-title">
+                    </label>
 
-             </fieldset>
-        
-             <fieldset>
+                </fieldset>
+            
+                <fieldset>
 
-                <legend><strong>Contact Information</strong></legend>
-                <label>
-                    Email:
-                    <input type="email" name="email" autocomplete="email"placeholder="example@email.com" title="Enter your email" required>
-                </label>
+                    <legend><strong>Contact Information</strong></legend>
+                    <label>
+                        Email:
+                        <input type="email" name="email" autocomplete="email" placeholder="example@email.com" title="Enter your email" required>
+                    </label>
 
-                <label>
-                    Mobile Phone:
-                    <input type="tel" name="phone" autocomplete="tel" title="Enter phone number"  pattern="[0-9]*" required>
-                </label>
+                    <label>
+                        Mobile Phone:
+                        <input type="tel" name="phone" autocomplete="tel" title="Enter phone number"  pattern="[0-9]*" required>
+                    </label>
 
-            </fieldset>
+                </fieldset>
 
-            <fieldset>
+                <fieldset>
 
-                <legend><strong>Business information</strong></legend>
-                <label>
-                    Business Name:
-                    <input type="text" name="business" autocomplete="organization" title="Enter business name" required>
-                </label>
+                    <legend><strong>Business information</strong></legend>
+                    <label>
+                        Business Name:
+                        <input type="text" name="business" autocomplete="organization" title="Enter business name" required>
+                    </label>
 
-                <label>
-                    Membership Level:
-                    <select name="membership" required>
-                        <option value="">--- Select membership below ---</option>
-                        <option value="np">Non-Profit Membership</option>
-                        <option value="bronze">Bronze</option>
-                        <option value="silver">Silver</option>
-                        <option value="gold">Gold</option>
-                    </select>
-                </label>
+                    <label>
+                        Membership Level:
+                        <select name="membership" required>
+                            <option value="">--- Select membership below ---</option>
+                            <option value="np">Non-Profit Membership</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                        </select>
+                    </label>
 
-                <label>
-                    Business Description:
-                    <textarea name="description" title="Describe your business"></textarea>
-                </label>
+                    <label>
+                        Business Description:
+                        <textarea name="description" title="Describe your business"></textarea>
+                    </label>
 
-                <input type="hidden" id="timestamp" name="timestamp">
+                    <input type="hidden" id="timestamp" name="timestamp">
 
-                <input type="submit" value="Apply for Membership">
-            </fieldset>
+                    <input type="submit" value="Apply for Membership">
+                </fieldset>
 
-        </form>
+            </form>
+        </div>   
 
         <div class="members">
 
@@ -122,25 +123,25 @@
             <div>
                 <img src="images/np-logo.svg" alt="non profit logo" height="44" width="44">
                 <h3>NP Membership</h3>
-                <button id="np-button">View Benefits</a>
+                <button id="np-button">View Benefits</button>
             </div>
 
             <div>
                 <img src="images/bronze-medal.svg" alt="bronze logo" height="44" width="44">
                 <h3>Bronze</h3>
-                <button id="bronze-button">View Benefits</a>
+                <button id="bronze-button">View Benefits</button>
             </div>
 
             <div>
                 <img src="images/silver-medal.svg" alt="silver logo" height="44" width="44">
                 <h3>Silver</h3>
-                <button id="silver-button">View Benefits</a>
+                <button id="silver-button">View Benefits</button>
             </div>
 
             <div>
                 <img src="images/gold-medal.svg" alt="gold logo" height="44" width="44">
                 <h3>Gold</h3>
-                <button id="gold-button">View Benefits</a>
+                <button id="gold-button">View Benefits</button>
             </div>
 
         </div>
