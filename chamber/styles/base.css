@@ -361,6 +361,7 @@ form input[type="submit"]:hover {
 
 fieldset {
     margin-bottom: 1rem;
+    border-radius: 0 20px 0 0;
 }
 
 .members {
