@@ -67,6 +67,11 @@
                     <input type="text" name="orgtitle" pattern="[A-Za-z\\-\\s]{7,}" title="At least 7 letters, spaces, or hyphens" autocomplete="organization-title">
                 </label>
 
+             </fieldset>
+        
+             <fieldset>
+
+                <legend><strong>Contact Information</strong></legend>
                 <label>
                     Email:
                     <input type="email" name="email" autocomplete="email"placeholder="example@email.com" title="Enter your email" required>
@@ -74,7 +79,7 @@
 
                 <label>
                     Mobile Phone:
-                    <input type="tel" name="phone" autocomplete="tel" title="Enter phone number"  required>
+                    <input type="tel" name="phone" autocomplete="tel" title="Enter phone number"  pattern="[0-9]*" required>
                 </label>
 
             </fieldset>

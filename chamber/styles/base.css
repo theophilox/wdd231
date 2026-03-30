@@ -356,6 +356,11 @@ form input[type="submit"]:hover {
     color: white;
 }
 
+
+fieldset {
+    margin-bottom: 1rem;
+}
+
 .members {
     display: flex;
     flex-direction: column;
@@ -401,5 +406,23 @@ dialog {
 .output {
     text-align: center;
 
+}
+
+label:focus-within {
+    font-weight: bolder;
+}
+
+input:focus {
+    box-shadow: 0 0 10px var(--primary);
+    outline: none;
+}
+
+
+input:required:valid {
+  border: 2px solid green;
+}
+
+input:focus:invalid {
+  border: 2px solid red;
 }
 
