@@ -1,0 +1,53 @@
+/* Color Scheme */
+        :root {
+            --primary-color: #2E8B57; /* green for headings */
+            --secondary-color: #FFD700; /* gold accents */
+            --background-color: #F5F5F5; /* light background */
+            --text-color: #333333; /* main text color */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        .wireframe {
+            border: 2px dashed var(--secondary-color);
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            font-style: italic;
+            color: var(--secondary-color);
+        }
