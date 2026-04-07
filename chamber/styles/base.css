@@ -440,3 +440,117 @@ input:focus:invalid {
   border: 2px solid red;
 }
 
+
+/*---------------Discover-----------------*/
+
+
+#discover-cards {
+    display: grid;
+    grid-gap: 1rem;
+    
+
+}
+
+#discover-cards section {
+    box-shadow: 0 0 15px rgb(54, 54, 54);
+    margin: .5rem;
+    text-align: center;
+    border-radius: 0 20px 0 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+    "name"
+    "photo"
+    "description"
+    "address"
+    "button";
+}
+
+.discover-cont {
+    margin: 1rem
+}
+
+#discover-cards h2 {
+    grid-area: name;
+    margin: 0 .5rem;
+    padding: 1rem;
+}
+
+#discover-cards figure {
+    grid-area: photo;
+    margin: 0;
+}
+
+#discover-cards img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.8ms;
+}
+
+#discover-cards img:hover {
+    transform: scale(1.1);
+}
+
+#discover-cards section:hover {
+    transform: scale(1.02);
+
+}
+
+#discover-cards section p {
+    grid-area: description;
+    margin: 0 .3rem;
+    padding: .5rem;
+}
+
+#discover-cards address {
+    grid-area: address;
+    margin: 0 .3rem;
+    padding: .5rem;
+}
+
+#discover-button {
+    grid-area: button;
+    display: block; 
+    margin: .5rem auto 1rem;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 0 10px 0px 0;
+}
+
+#visit-message {
+    max-width: 500px;
+    height: auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    background: var(--secondary);
+    padding: 0.5rem;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+#discover-button:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-weight: bold;
+}
+
+#visit-message {
+        animation: slideIn 1s forwards;
+    }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+    
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
