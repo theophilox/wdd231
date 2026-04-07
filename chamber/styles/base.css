@@ -531,6 +531,7 @@ input:focus:invalid {
     margin: auto;
     border-radius: 10px;
     margin-bottom: 1rem;
+    animation: slideIn 2s forwards;      
 }
 
 #discover-button:hover {
@@ -539,10 +540,7 @@ input:focus:invalid {
     font-weight: bold;
 }
 
-#visit-message {
-        animation: slideIn 1s forwards;
-    }
-        @keyframes slideIn {
+@keyframes slideIn {
             from {
                 transform: translateY(-100%);
                 opacity: 0;
@@ -553,4 +551,3 @@ input:focus:invalid {
                 opacity: 1;
             }
         }
-
