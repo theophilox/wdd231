@@ -486,7 +486,7 @@ input:focus:invalid {
     height: auto;
     margin: 0;
     padding: 0;
-    transition: transform 0.8ms;
+    transition: transform 0.1ms;
 }
 
 #discover-cards img:hover {
