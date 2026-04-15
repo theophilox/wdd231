@@ -301,6 +301,10 @@ footer {
     
 }
 
+.copyright a {
+    color: var(--secondary-color);
+}
+
 .social img {
     width: 30px;
     height: auto;
@@ -339,8 +343,6 @@ button {
     background: var(--primary-color);
     color: white;
     padding: 0.8rem;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
