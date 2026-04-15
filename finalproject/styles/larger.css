@@ -20,14 +20,14 @@
         font-size: 50px;
         color: white;
         position: absolute;
-        top: 40px;
+        top: 80px;
         left: 40px;
     }
 
     .hero p{
         color: white;
         position: absolute;
-        top: 150px;
+        top: 200px;
         left: 50px;
 
     }
@@ -36,8 +36,8 @@
         background: var(--primary-color);
         color: white;
         position: absolute;
-        top: 180px;
-        left: 30px;
+        top: 230px;
+        left: 50px;
         font-weight: 800;
 
 
