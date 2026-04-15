@@ -23,6 +23,7 @@ header {
     text-align: center;
     align-items: center;
     background: var(--primary-color);
+    color: white;
 }
 
 header img {
@@ -119,7 +120,7 @@ header span {
 .cta-button {
     display: block;
     max-width: 150px;
-    border: 1px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
     padding: 0.5rem;
     border-radius: 10px;
     color: black;
@@ -130,6 +131,7 @@ header span {
 .cta-button:hover {
     background-color: var(--primary-color);
     border: 1px white solid;
+    color: white;
 
 }
 
