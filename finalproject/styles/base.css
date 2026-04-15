@@ -4,56 +4,214 @@
     --text-color: #333333;
 }
 
-body {
-    font-family: "Inter Tight", sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0 20px;
+* {
+    box-sizing: border-box;
 }
 
+body {
+    font-family: "Inter Tight", sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 10px;
+}
+
+/*------------ Header ------------*/
+
 header {
+    display: grid;
+    grid-template-columns: 60px auto 44px;
     text-align: center;
-    padding: 20px 0;
+    align-items: center;
     background-color: var(--primary-color);
     color: white;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+header img {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    
 }
 
-nav ul li a {
-    text-decoration: none;
+header span {
+    color: var(--secondary-color);
+    font-size: large;
+    font-weight: 600;
+}
+
+/*------------ Hamburger ------------*/
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
     color: white;
-    font-weight: bold;
 }
 
-h1, h2, h3 {
-    color: var(--primary-color);
-    font-family: "Lexend Giga", sans-serif;
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+    color: white;
 }
 
-section {
-    margin: 20px 0;
-}
-
-.wireframe {
-    border: 2px dashed var(--secondary-color);
-    padding: 10px;
-    margin: 10px 0;
-    text-align: center;
+/*------------ Navigation ------------*/
+.navigation {
+    display: none;
+    background-color: var(--primary-color);
+    grid-column: 1/-1;
+    margin-top: 10px;
     color: var(--secondary-color);
 }
 
-.wireframe img{
+.navigation.show {
+    display: block;
+}
+
+.navigation img {
+    width: 100%;
+    height: auto;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navigation a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/*------------ Main ------------*/
+
+.hero {
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+    border: 1px var(--secondary-color) solid;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
+.cta-button {
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    border: 1px white solid;
+
+}
+
+
+h1 {
+    font-family: "Lexend Giga", sans-serif;
+    color: var(--primary-color);  
+    margin: 0;
+}
+
+h2, h3 {
+    color: var(--primary-color);
+    font-family: "Inter Tight", sans-serif;
+}
+
+.weather-cont {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 1rem;
+}
+
+.weather {
+    text-align: center;
+    background-color: #2E8B57;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0 5px 5px black;
+    align-items: center;
+    backdrop-filter: blur(100px);
+    
+}
+
+.weather h2 {
+    color: white;
+    margin: 0;
+}
+
+.weather p {
+    color: var(--secondary-color);
+    align-items: center;
+    margin: 0;
+}
+
+#current-temp {
+    margin: auto 0;
+    font-size: 50px;
+}
+
+.unit {
+    font-size: 0.8rem;    
+    vertical-align: top;
+    margin-left: 2px;
+}
+
+.current-weather {
+    display: grid;
+    /*--grid-template-columns: 1fr 1fr;--*/
+}
+
+.status-cont {
+    text-align: center;
+    grid-column: 1 / -1;
+    margin: 0;
+}
+
+#weather-icon {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+    height: 100px;
+    width: auto;
+}
 
+
+
+section {
+    margin-bottom: 20px;
+}
+
+
+.features-places {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 1rem;
 }

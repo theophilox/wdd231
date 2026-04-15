@@ -6,17 +6,30 @@
     <title>Project Site Plan</title>
     <meta name="author" content="Nathan Javier">
     <meta name="description" content="A plan about my traveling guide website for my final project in WDD231 BYU Pathway">
+    <meta  property="og:title" content="Welcome this is a travel guide for shimoda city in shizuoka ken, japan.">
+    <meta  property="og:description" content="Shimoda city beautiful places and cultural history places and other places around shimoda city only.">
+    <meta  property="og:image" content="https://theophilox.github.io/wdd231/chamber/images/naic-hero.jpg">
+    <meta  property="og:url" content="https://theophilox.github.io/wdd231/finalproject/index.html">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/features.js" type="module"></script>
+    <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Travel Shimoda</h1>
-        <nav>
+        <a href="index.html"><img src="images/travel-shimoda-logo.PNG" alt="travel Shimoda" width="100" height="40"></a>
+        <span>Travel Shimoda</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+        <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -24,60 +37,50 @@
         </nav>
     </header>
     <main>
-        <main>
-        <section>
-            <h2>Site Name</h2>
-            <p><strong>Travel Shimoda</strong></p>
-            <p>This name represents a travel-focused website dedicated to exploring Shimoda, Japan, highlighting its history, culture, beaches, and local attractions.</p>
+        <div class="hero">
+            <img src="images/shimoda-large.webp" alt="travel shimoda hero image">
+            <h1>Travel Shimoda</h1>
+            <p>Your guide to beautiful places, ocean views, and amazing adventures.</p>
+            <a href="#" class="cta-button">Contact Us</a>
+        </div>
+        <div class="weather-cont">
+            <section class="weather">
+                <h2>Today</h2>
+                <div class="current-weather" id="weather">
+                    <p><span id="current-temp"></span></p>
+                    <img id="weather-icon" src="#" alt="Weather Icon">
+                    <p class="status-cont"><span id="status"></span></p>
+                    
+                    
+                </div>            
+            </section>
+
+            <section class="weather">
+                <h2>WEATHER FORECAST</h2>
+                <div  id="forecast"></div>
+        </div>    
+
         </section>
 
-        <section>
-            <h2>Site Purpose</h2>
-            <p>The site provides information, tips, and guides for travelers visiting Shimoda, including attractions.</p>
-        </section>
+        <div id="features" class="features-places">
 
-        <section>
-            <h2>Scenarios</h2>
-            <ul>
-                <li>What are the must-see attractions in Shimoda for first-time visitors?</li>
-                <li>Where are the best beaches located in Shimoda, and what makes each one unique?</li>
-            </ul>
-        </section>
+        </div>
 
-        <section>
-            <h2>Color Scheme</h2>
-            <ul>
-                <li><strong>This color may change.</strong></li>
-                <li>Green (#2E8B57) </li>
-                <li>Gold (#FFD700) </li>
-                <li>Black (#333333)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Typography</h2>
-            <ul>
-                <li><strong>"Inter Tight", sans-serif:</strong> body text</li>
-                <li><strong>"Lexend Giga", sans-serif:</strong> headings and section titles</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Wireframe</h2>
-            <div class="wireframe">
-                <h3>Desktop Wireframe</h3> 
-                <img src="images/desktop-wireframe.png" alt="Desktop Wireframe">
-            </div>
-            <div class="wireframe">
-                <h3>Mobile Wireframe</h3>
-                <img src="images/mobile-wireframe.png" alt="Mobile Wireframe">
-            </div>
-        </section>
-
+        
     </main>
 
     <footer>
-        <p>Copyright 2026 | Nathan Javier | Philippines</p>
+        <div class="copyright">
+            <p></p><strong>Travel Shimoda</strong></p>
+            <p>© <span id="currentYear"></span> | WDD231 Class Final Project | Nathan Javier</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/Slex.xD/" target="_blank"><img src="images/facebook.svg" alt="facebook icon" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/nathan-javier27" target="_blank"><img src="images/linkedin.svg" alt="linkedIN icon" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/instagram.svg" alt="instagram icon" width="16" height="16"></a>
+        </div>
+
     </footer>
 </body>
 </html>
