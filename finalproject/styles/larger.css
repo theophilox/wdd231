@@ -12,13 +12,13 @@
 
     .hero img {
         filter: blur(2px);
-        filter: brightness(70%);
+        filter: brightness(50%);
     }
 
     .hero h1 {
         font-weight: 900;
         font-size: 50px;
-        color: white;
+        color: var(--secondary-color);
         position: absolute;
         top: 80px;
         left: 40px;
