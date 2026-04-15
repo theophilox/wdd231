@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Shimoda Home Page</title>
+    <title>Travel Shimoda Contact Pages</title>
     <meta name="author" content="Nathan Javier">
-    <meta name="description" content="A guide about my future traveling website for my final project in WDD231 BYU Pathway">
+    <meta name="description" content="This the contact pages that user can reach out or send thier email to recieved updates about information in shimoda city shizuoka japan events for my final project in WDD231 BYU Pathway">
     <meta  property="og:title" content="Welcome this is a travel guide for shimoda city in shizuoka ken, japan.">
     <meta  property="og:description" content="Shimoda city beautiful places and cultural history places and other places around shimoda city only.">
     <meta  property="og:image" content="https://theophilox.github.io/wdd231/images/shimoda-large.webp">
@@ -14,11 +14,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/forecast.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
-    <script src="scripts/features.js" type="module"></script>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,44 +28,46 @@
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a  href="index.html">Home</a></li>
+                <li><a  href="destinations.html">Destinations</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img src="images/shimoda-large.webp" alt="travel shimoda hero image">
-            <h1>Travel Shimoda</h1>
-            <p>Your guide to beautiful places, ocean views, and amazing adventures.</p>
-            <a href="#" class="cta-button">Contact Us</a>
-        </div>
-        <div class="weather-cont">
-            <section class="weather">
-                <h2>Today</h2>
-                <div class="current-weather" id="weather">
-                    <p><span id="current-temp"></span></p>
-                    <img id="weather-icon" src="#" alt="Weather Icon">
-                    <p class="status-cont"><span id="status"></span></p>
-                    
-                    
-                </div>            
-            </section>
-            <section class="weather">
-                <h2>WEATHER FORECAST</h2>
-                <div  id="forecast"></div>
-        </div>    
+        
+        <h1>Contact Travel Shimoda</h2>
 
-        </section>
-
-        <div class="discover">
-            <h2>Discover Shimoda</h2>
-            <p>From pristine coastlines to centuries-old temples, Shimoda offers experiences that linger long after you leave.</p>
-
-            <div id="features">
-
+        <div class="contact-container">
+            <div class="contact-msg">
+                <p>We'd love to hear from you!</p>
+                <p>Whether you have questions, suggestions, or need help planning your trip to Shimoda, feel free to reach out.</p> 
+                <p>Our team is always happy to assist you in discovering the best experiences the city has to offer</p>
+                <p>Send us a message and we'll get back to you as soon as possible.</p> 
+                <p>Your adventure in Shimoda starts with a simple hello!</p>
             </div>
+
+            <section class="contact-form-section">
+
+                <form method="get" action="thankyou.html" id="contact-form" >
+                    
+                    <label for="name">Name
+                        <input type="text" name="name" id="name" title="Enter first name" required>
+                    </label>
+
+                    <label for="email">Email
+                        <input type="email" name="email" title="Enter your email" id="email" required placeholder="example@email.com">
+                    </label>
+
+                    <label for="message">Message
+                        <textarea id="message" rows="5" required></textarea>
+                    </label>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+
+                </form>
+
+            </section>
         </div>
 
         

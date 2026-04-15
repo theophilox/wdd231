@@ -27,15 +27,15 @@ header {
 }
 
 header img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 30px;
     padding: 5px;
     
 }
 
 header span {
     color: var(--secondary-color);
-    font-size: large;
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -118,12 +118,14 @@ header span {
 
 
 .cta-button {
+    display: block;
+    max-width: 150px;
     border: 1px solid var(--primary-color);
     padding: 0.5rem;
     border-radius: 10px;
     color: black;
     text-decoration: none;
-    margin: 1rem;
+    margin: 1rem auto;
 }
 
 .cta-button:hover {
@@ -235,7 +237,7 @@ section {
 }
 
 
-#features section {
+#features section, #destinations section {
     min-width: 300px;
     height: auto;  
     display: grid;
@@ -252,7 +254,7 @@ section {
 
 }
 
-#features section:hover {
+#features section:hover, #destinations section:hover {
     transform: translateY(-10px);
     box-shadow: 0 5px 4px rgb(74, 74, 74);
 }
@@ -306,16 +308,6 @@ footer {
 }
 
 
-/*------------ Destinations Page ------------*/
-
-#destinations {
-    display: grid;
-}
-
-main > p {
-    text-align: center;
-}
-
 /*------------ Visit Message ------------*/
 
 
@@ -338,7 +330,7 @@ main > p {
 /*------------ Filter Buttons ------------*/
 
 .buttons  {
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -354,6 +346,17 @@ button:hover {
     font-weight: 700;
 }
 
+/*------------ Destinations Page ------------*/
+
+#destinations {
+    display: grid;
+    
+}
+
+main > p {
+    text-align: center;
+}
+
 #destinations section {
     min-width: 300px;
     height: auto;  
@@ -361,6 +364,7 @@ button:hover {
     border: 2px var(--primary-color) solid;
     padding: 0.5rem;
     border-radius: 10px;
+    transition: transform 0.3s ease;
     grid-template-areas:
     "name"
     "photo"
@@ -425,4 +429,55 @@ button:hover {
 ::backdrop {
     background-color: rgba(87, 116, 92, 0.8);
 }
+
+/*------------ Contact Page------------*/
+
+
+.contact-page {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.contact-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #256f45;
+    transform: translateY(-2px);
+}
+
+.output {
+    text-align: center;
+    color: #256f45;
+}
+
 

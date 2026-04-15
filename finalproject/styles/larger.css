@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 900px) {
     main {
         display: block;
 
@@ -105,5 +105,29 @@
         transform: translateY(-10px)
     }
 
+
+    /*------------ Destination ------------*/
+
+    #destinations {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    /*------------ Contact ------------*/
+
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .contact-form-section {
+        order: 1;
+    }
+
+    .contact-msg {
+        order: 2;
+    }
 
 }
