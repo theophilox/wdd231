@@ -1,0 +1,109 @@
+@media only screen and (min-width: 1025px) {
+    main {
+        display: block;
+
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero img {
+        filter: blur(2px);
+        filter: brightness(70%);
+    }
+
+    .hero h1 {
+        font-weight: 900;
+        font-size: 50px;
+        color: white;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+
+    .hero p{
+        color: white;
+        position: absolute;
+        top: 150px;
+        left: 50px;
+
+    }
+
+    .cta-button {
+        background: var(--primary-color);
+        color: white;
+        position: absolute;
+        top: 180px;
+        left: 30px;
+        font-weight: 800;
+
+
+    }
+
+    .cta-button:hover {
+        color: white;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 110px auto 300px;
+        align-items: center;
+    }
+
+    header span {
+        font-size: 30px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+       
+        display: block;
+        grid-column: auto;
+        margin: 0;
+    }
+
+    .navigation ul {
+        text-align: right;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .navigation a.active {
+        border-radius: 10px;
+    }
+
+    .navigation a:hover {
+        border-radius: 10px;
+    }
+
+    #current-temp {
+    margin: auto 0;
+    font-size: 30px;
+    }   
+
+    #weather-icon {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: auto;
+    }
+
+    #forecast {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #features section:hover{
+        transform: translateY(-10px)
+    }
+
+
+}

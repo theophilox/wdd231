@@ -12,6 +12,7 @@ async function currentWeather() {
         const response = await fetch(weatherUrl);
         if (response.ok) {
             const data = await response.json();
+            console.log(data)
             displayResults(data);
         }
         else {

@@ -35,6 +35,7 @@ localStorage.setItem("lastVisit", now);
 
 function displayPlaces(places) {
     const discoverCards = document.querySelector("#discover-cards");
+    discoverCards.innerHTML = "";
     places.forEach((place) => {
         let card = document.createElement("section");
         let figure = document.createElement("figure");

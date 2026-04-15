@@ -1,15 +1,43 @@
-import {places} from "../data/places.mjs"
-console.log(places)
+import {places} from "../data/places.mjs";
+import { displayModal } from "./modal.js";
 
 
-function featurePlaces(places) {
-    const featureCards = document.querySelector("#features");
+const visitMessage = document.getElementById("visit-message");
+
+const lastVisit = localStorage.getItem("lastVisit");
+
+const now = Date.now();
+
+let message = "";
+
+if (!lastVisit) {
+  message = "Welcome! Let us know if you have any questions.";
+} else {
+  const lastVisitTime = parseInt(lastVisit);
+  const timeDiff = now - lastVisitTime;
+
+  const oneDay = 86400000;
+  const daysDiff = Math.floor(timeDiff / oneDay);
+
+  if (daysDiff < 1) {
+    message = "Back so soon! Check out all beautiful destinations!";
+  } else if (daysDiff === 1) {
+    message = "You last visited 1 day ago.";
+  } else {
+    message = `You last visited ${daysDiff} days ago.`;
+  }
+}
+
+visitMessage.textContent = message;
+
+localStorage.setItem("lastVisit", now);
+
+
+export function discoverPlaces(places) {
+    const featureCards = document.querySelector("#destinations");
     featureCards.innerHTML = "";
-    const filterPlace = places.filter(place => place.star >= 2);
-    const random = filterPlace.sort(() => 0.5 - Math.random());
-    const selected = random.slice(0, 5);
 
-    selected.forEach((place) => {
+    places.forEach((place) => {
         let card = document.createElement("section");
         let figure = document.createElement("figure");
         let img = document.createElement("img");
@@ -35,10 +63,14 @@ function featurePlaces(places) {
         card.appendChild(address);
         card.appendChild(description);
         card.appendChild(stars)
+        card.addEventListener("click", () => {
+            displayModal(place);
+
+        });
         featureCards.appendChild(card);
 
     });
 }
 
 
-featurePlaces(places);
+discoverPlaces(places);

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Shimoda Home Page</title>
+    <title>Travel Shimoda Destination Pages</title>
     <meta name="author" content="Nathan Javier">
-    <meta name="description" content="A guide about my future traveling website for my final project in WDD231 BYU Pathway">
+    <meta name="description" content="A list of destination places and their information about shimoda city shizuoka japan for my final project in WDD231 BYU Pathway">
     <meta  property="og:title" content="Welcome this is a travel guide for shimoda city in shizuoka ken, japan.">
     <meta  property="og:description" content="Shimoda city beautiful places and cultural history places and other places around shimoda city only.">
     <meta  property="og:image" content="https://theophilox.github.io/wdd231/chamber/images/naic-hero.jpg">
@@ -13,11 +13,10 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/forecast.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
-    <script src="scripts/features.js" type="module"></script>
+    <script src="scripts/filter.js" type="module"></script>
+    <script src="scripts/destinations.js" type="module"></script>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,45 +29,37 @@
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
+                <li><a  href="index.html">Home</a></li>
+                <li><a class="active" href="destinations.html">Destinations</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img src="images/shimoda-large.webp" alt="travel shimoda hero image">
-            <h1>Travel Shimoda</h1>
-            <p>Your guide to beautiful places, ocean views, and amazing adventures.</p>
-            <a href="#" class="cta-button">Contact Us</a>
+        
+        <h1>Discover Shimoda</h2>
+        <p>From untouched beaches to historic temples that have stood for centuries, Shimoda creates moments that stay with you long after your journey ends.</p>
+
+        <div id="visit-message">
+
         </div>
-        <div class="weather-cont">
-            <section class="weather">
-                <h2>Today</h2>
-                <div class="current-weather" id="weather">
-                    <p><span id="current-temp"></span></p>
-                    <img id="weather-icon" src="#" alt="Weather Icon">
-                    <p class="status-cont"><span id="status"></span></p>
-                    
-                    
-                </div>            
-            </section>
-            <section class="weather">
-                <h2>WEATHER FORECAST</h2>
-                <div  id="forecast"></div>
-        </div>    
 
-        </section>
+         <div class="buttons">
+                <button id="show-all">All</button>
+                <button id="show-nature">Nature</button>
+                <button id="show-history">History</button>
+                <button id="show-viewpoint">Viewpoints</button>
 
-        <div class="discover">
-            <h2>Discover Shimoda</h2>
-            <p>From pristine coastlines to centuries-old temples, Shimoda offers experiences that linger long after you leave.</p>
+            </div>
 
-            <div id="features">
+        <div> 
+
+            <div id="destinations">
 
             </div>
         </div>
+
+        <dialog id="modal"></dialog>
 
         
     </main>

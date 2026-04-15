@@ -25,7 +25,7 @@ export const places = [
   },
   {
     "name": "Perry Road",
-    "type": "Culture & History",
+    "type": "History",
     "star": 2,
     "description": "A canal-side street with traditional buildings and cafes.",
     "location": "Sanchome, Shimoda, Shizuoka, Japan",
@@ -33,7 +33,7 @@ export const places = [
   },
   {
     "name": "Susaki Ebisu Shrine",
-    "type": "Culture & History",
+    "type": "History",
     "star": 2,
     "description": "A coastal shrine with scenic ocean views.",
     "location": "Suzaki, Shimoda, Shizuoka, Japan",
@@ -41,7 +41,7 @@ export const places = [
   },
   {
     "name": "Shimoda Ropeway",
-    "type": "Viewpoints & Attractions",
+    "type": "Viewpoints",
     "star": 3,
     "description": "A ropeway offering panoramic views of Shimoda.",
     "location": "Higashihongo, Shimoda, Shizuoka, Japan",
@@ -49,7 +49,7 @@ export const places = [
   },
   {
     "name": "Mount Nesugata Observatory",
-    "type": "Viewpoints & Attractions",
+    "type": "Viewpoints",
     "star": 3,
     "description": "A viewpoint overlooking Shimoda Bay.",
     "location": "Naka, Shimoda, Shizuoka, Japan",
@@ -57,7 +57,7 @@ export const places = [
   },
   {
     "name": "Shimoda Floating Aquarium",
-    "type": "Viewpoints & Attractions",
+    "type": "Viewpoints",
     "star": 2,
     "description": "A floating aquarium built on the sea.",
     "location": "Shimoda, Shizuoka, Japan",
