@@ -10,7 +10,6 @@
 
 body {
     font-family: "Inter Tight", sans-serif;
-    color: var(--text-color);
     margin: 0;
     padding: 10px;
 }
@@ -172,7 +171,7 @@ h2, h3 {
 }
 
 .weather p {
-    color: var(--secondary-color);
+    color: white;
     align-items: center;
     margin: 0;
 }
