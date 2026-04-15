@@ -18,10 +18,11 @@
     .hero h1 {
         font-weight: 900;
         font-size: 50px;
-        color: var(--secondary-color);
+        color: yellow;
         position: absolute;
         top: 80px;
         left: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     .hero p{
@@ -29,6 +30,7 @@
         position: absolute;
         top: 200px;
         left: 50px;
+        background-color: rgba(0, 0, 0, 0.5)
 
     }
 
