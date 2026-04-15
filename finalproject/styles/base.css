@@ -335,15 +335,23 @@ footer {
 }
 
 button {
-    padding: 5px;
     border-radius: 5px;
     border: 2px var(--primary-color) solid;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+
 button:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background: #256f45;
+    color: var(--secondary-color);
     font-weight: 700;
+    transform: translateY(-2px);
 }
 
 /*------------ Destinations Page ------------*/
@@ -460,20 +468,8 @@ input, textarea {
     border-radius: 5px;
 }
 
-button {
-    background: var(--primary-color);
-    color: white;
-    padding: 0.8rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
 
-button:hover {
-    background: #256f45;
-    transform: translateY(-2px);
-}
+
 
 .output {
     text-align: center;
