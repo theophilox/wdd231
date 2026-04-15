@@ -91,12 +91,12 @@ header span {
 }
 
 .navigation a.active {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: white;
+    color: var(--primary-color);
 }
 
 .navigation a:hover {
-    background-color: var(--secondary-color);
+    background-color: white;
     color: var(--primary-color);
     font-weight: bold;
 }
