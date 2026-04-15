@@ -34,7 +34,7 @@ header img {
 }
 
 header span {
-    color: var(--secondary-color);
+    color: white;
     font-size: 25px;
     font-weight: 600;
 }
