@@ -160,7 +160,7 @@ h2, h3 {
     background-color: var(--primary-color);
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 5px 5px black;
+    box-shadow: 0 5px 5px rgb(120, 120, 120);
     align-items: center;
     backdrop-filter: blur(100px);
     
